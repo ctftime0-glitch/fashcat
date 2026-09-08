@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            #ffcd69 0%,
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 0% 100%,
+            #ff0000 0%,
+            transparent 45%
+        ),
+        #0f0f0f;
+}
+.container {
+    height: 98vh;
+    margin: 0;
+    border: 2px solid #0f0f0f;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.container1 {
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+}
+.container1 img {
+    width: 200px;
+    height: 100px;
+    margin-top: -10px;
+}
+.container2 {
+    height: 80px;
+    margin-left: 210px;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-sizing: border-box;
+}
+.search {
+    flex: 1;
+}
+.search input {
+    width: 100%;
+    height: 35px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 15px;
+    outline: none;
+}
+.search input:focus {
+    border-color: #333;
+}
+.inputFile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+.fileName {
+    color:black;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fileButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fileButton:hover {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
+.buttonInput {
+    display: flex;
+    align-items: center;
+}
+.buttonInput button {
+    height: 35px;
+    padding: 0 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+}
+.buttonInput button:hover {
+    background-color: #333;
+    color: white;
+}
+.container3 {
+    height: calc(100vh - 120px);
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.312);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.outputBox {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.outputBox pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: monospace;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        width: 150px;
+    }
+    .container1 img {
+        width: 150px;
+        height: auto;
+    }
+    .container2 {
+        margin-left: 10px;
+        margin-top: 0;
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .search {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .inputFile {
+        flex: 1;
+    }
+    .fileName {
+        max-width: 150px;
+    }
+    .buttonInput {
+        flex-shrink: 0;
+    }
+    .container3 {
+        height: calc(100vh - 180px);
+    }
+} 
