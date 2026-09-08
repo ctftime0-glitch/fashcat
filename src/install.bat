@@ -16,10 +16,13 @@ echo check model:
 ollama list
 
 echo install model:
-ollama install qwen2.5-coder:3b
+ollama create qwen2.5-coder:3b
 
 echo run serve:
 ollama serve
+
+echo regist:
+ollama pull qwen2.5-coder:3b
 
 echo ollama run:
 ollama run qwen2.5-coder:3b
