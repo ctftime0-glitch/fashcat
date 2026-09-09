@@ -1,10 +1,7 @@
 @echo off
 
-echo check winget version:
-winget --version
-
 echo install ollama of winget:
-winget install Ollama.Ollama
+curl -L -o OllamaSetup.exe https://ollama.com/download/OllamaSetup.exe
 
 echo check ollama version:
 ollama -v
