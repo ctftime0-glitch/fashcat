@@ -1,6 +1,6 @@
 @echo off
 
-echo install ollama of winget:
+echo install ollama of cmd:
 curl -L -o OllamaSetup.exe https://ollama.com/download/OllamaSetup.exe
 
 echo check ollama version:
