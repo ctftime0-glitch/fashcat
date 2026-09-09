@@ -12,10 +12,11 @@ tujuan nya yaitu supaya mempermudah dalam pemahaman dan mempercantik UI sehingga
 #install on windows 
 1. install .zip
 2. extract
-3. cd fashcat-main/fashcat-main/src
-4. npm install
-5. (open file install.bat)
-6. node server.js
+3. install node js
+4. cd fashcat-main/fashcat-main/src
+5. npm install
+6. (open file install.bat)
+7. node server.js
 
 #install on linux and mac
 1. git clone https://github.com/ctftime0-glitch/fashcat.git
